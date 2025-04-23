@@ -6,23 +6,44 @@
     <title>Tabel dalam HTML</title>
 </head>
 <body>
-    <table>
-        <tr>
-            <th>Provinsi</th>
-            <th>Ibu Kota</th>
-            <th>jumlah populasi</th>
-        </tr>
+    <hr>
+    <table class="tabel-populasi">
+        <thead>
+            <tr>
+                <th rowspan="2"> Provinsi</th>
+                <th rowspan="2">Ibu Kota</th>
+                <th colspan="2">Kependudukan</th>
+            </tr>
+            <tr> 
+                <th>jumlah</th>
+                <th>Pertumbuhan</th>
+            
+            </tr>
 
-       <tr> <td>Aceh</td>
-            <td>Banda Aceh</td>
-            <td>254.000</td>
-        </tr>
+        </thead>
+
+        <tbody>
+           <tr> <td>Aceh</td>
+                <td>Banda Aceh</td>
+                <td>254.000</td>
+                <td>+1,84</td>
+            </tr>
         
-        <tr>
-            <td>Sumatera Utara</td>
-            <td>Medan</td>
-            <td>2.222.000</td>
-        </tr>
+            <tr>
+                <td>Sumatera Utara</td>
+                <td>Medan</td>
+                <td>2.222.000</td>
+                <td>+0,85</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">JUMLAH</td>
+                <td>2.476.000</td>
+                <td>non</td>
+            </tr>
+        </tfoot>
     </table>
+    <hr>
 </body>
 </html>
