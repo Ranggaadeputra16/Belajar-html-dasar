@@ -6,64 +6,113 @@
     <title>chart</title>
 </head>
 <body>
+   <form action="Form.html" method="post">
     <h1>Produk Yang Dapat Dipesan</h1>
         <table>
             <thead>
-                <th>Atasan</th>
-                <th>Bawahan</th>
-                <th>aksesoris</th>
+                <tr>                    
+                    <th>Atasan</th>
+                    <th>Bawahan</th>
+                    <th>aksesoris</th>
+                </tr>
             </thead>
 
             <tbody>
                 <tr>
                     
                     <td>
-                        <input type="radio" name="Kaus" id="kaus"> 
-                        <label for="Kaus">kaus</label>
+                        <input type="radio" name="atasan" id="kaus"> 
+                        <label for="kaus">kaus</label>
                     </td>
                     
                     <td>
-                        <input type="radio" name="jean" id="jean"> 
+                        <input type="radio" name="bawahan" id="jean"> 
                         <label for="jean">jean</label>
                     </td>
 
                     <td>
-                        <input type="radio" name="topi" id="topi"> 
+                        <input type="radio" name="aksesoris" id="topi"> 
                         <label for="topi">topi</label>
                     </td>
                     
                 </tr>
                 <tr>
                     <td>
-                        <input type="radio" name="kemeja" id="kemeja"> 
+                        <input type="radio" name="atasan" id="kemeja"> 
                         <label for="kemeja">kemeja</label>
                     </td>
                     <td>
-                        <input type="radio" name="cargo" id="cargo"> 
+                        <input type="radio" name="bawahan" id="cargo"> 
                         <label for="cargo">cargo</label>
                     </td>
                     <td>
-                        <input type="radio" name="nackle" id="nacle"> 
+                        <input type="radio" name="aksesoris" id="nacle"> 
                         <label for="nackle">nacle</label>
                     </td>
                 </tr>
 
                 <tr>
                     <td>
-                        <input type="radio" name="sweater" id="sweater"> 
+                        <input type="radio" name="atasan" id="sweater"> 
                         <label for="sweater">sweater</label>
                     </td>
                     <td>
-                        <input type="radio" name="short-pant" id="short-pant"> 
+                        <input type="radio" name="bawahan" id="short-pant"> 
                         <label for="short-pant">short pant</label>
                     </td>
                     <td>
-                        <input type="radio" name="tatoo" id="tatoo"> 
+                        <input type="radio" name="aksesoris" id="tatoo"> 
                         <label for="tatoo">tatoo</label>
                     </td>
                     
                 </tr>
+                <tr>
+                    <td>
+                        <label for="size-baju">Pilih ukuran baju : </label>
+                        <select id="size-baju" name="baju">
+                          <option value="s">small</option>
+                          <option value="m">medium</option>
+                          <option value="l">large</option>
+                          <option value="xl">extra large</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <label for="sizepant">Pilih ukuran celana</label>
+                        <select name="sizepant" id="celana">
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="30">30</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="tipeaksesoris">pilih kualitas aksesoris:</label>
+                        <select name="tipeaksesoris" id="kualitas">
+                            <option value="standar">biasa</option>
+                            <option value="good">bagus</option>
+                            <option value="spesial">sangat bagus</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit">Pesan!</button>
+                    </td>
+                </tr>
             </tbody>
         </table>
+
+        <table>
+            <tfoot>
+                <tr>
+                   <td colspan="3"> Terimakasih sudah berbelanja !</td> 
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+    <form action="Form.html">
+        <button type="submit">kembali ke form</button>
+    </form>
+
 </body>
 </html>
