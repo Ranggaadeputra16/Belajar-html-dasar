@@ -6,7 +6,7 @@
     <title>chart</title>
 </head>
 <body>
-   <form action="Form.html" method="post">
+   <form action="Form.html" method="get">
     <h1>Produk Yang Dapat Dipesan</h1>
         <table>
             <thead>
@@ -21,47 +21,47 @@
                 <tr>
                     
                     <td>
-                        <input type="radio" name="atasan" id="kaus"> 
+                        <input type="radio" name="atasan" id="kaus" value="kaus"> 
                         <label for="kaus">kaus</label>
                     </td>
                     
                     <td>
-                        <input type="radio" name="bawahan" id="jean"> 
+                        <input type="radio" name="bawahan" id="jean" value="jean"> 
                         <label for="jean">jean</label>
                     </td>
 
                     <td>
-                        <input type="radio" name="aksesoris" id="topi"> 
+                        <input type="radio" name="aksesoris" id="topi" value="topi"> 
                         <label for="topi">topi</label>
                     </td>
                     
                 </tr>
                 <tr>
                     <td>
-                        <input type="radio" name="atasan" id="kemeja"> 
+                        <input type="radio" name="atasan" id="kemeja" value="kemeja"> 
                         <label for="kemeja">kemeja</label>
                     </td>
                     <td>
-                        <input type="radio" name="bawahan" id="cargo"> 
+                        <input type="radio" name="bawahan" id="cargo" value="cargo"> 
                         <label for="cargo">cargo</label>
                     </td>
                     <td>
-                        <input type="radio" name="aksesoris" id="nacle"> 
+                        <input type="radio" name="aksesoris" id="nacle" value="nacle"> 
                         <label for="nackle">nacle</label>
                     </td>
                 </tr>
 
                 <tr>
                     <td>
-                        <input type="radio" name="atasan" id="sweater"> 
+                        <input type="radio" name="atasan" id="sweater" value="sweater"> 
                         <label for="sweater">sweater</label>
                     </td>
                     <td>
-                        <input type="radio" name="bawahan" id="short-pant"> 
+                        <input type="radio" name="bawahan" id="short-pant" value="short-pant"> 
                         <label for="short-pant">short pant</label>
                     </td>
                     <td>
-                        <input type="radio" name="aksesoris" id="tatoo"> 
+                        <input type="radio" name="aksesoris" id="tatoo" value="tatoo"> 
                         <label for="tatoo">tatoo</label>
                     </td>
                     
@@ -92,6 +92,16 @@
                             <option value="good">bagus</option>
                             <option value="spesial">sangat bagus</option>
                         </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div>
+                            <p>
+                                <label for="notes"> Catatan</label>
+                            </p>
+                            <textarea name="notes" id="notes" cols="50" rows="5" placeholder="berikan pesan kepada seller"></textarea>
+                        </div>
                     </td>
                 </tr>
                 <tr>
